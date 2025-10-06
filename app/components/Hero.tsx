@@ -49,14 +49,16 @@ export default function Hero() {
     <section className="min-h-screen flex items-center justify-center bg-cyber-bg relative overflow-hidden pt-20">
       <div className="container mx-auto px-4 text-center z-10">
         <h1 ref={textWrapperRef} className="text-5xl md:text-7xl font-bold mb-6">
-          Kshitij Mahajan: Cyber Dev & Tennis Ace
+          Kshitij Mahajan: Developer Advocate
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-8">
-          Developer Relations | Full-Stack & Web3 | On the Court
+          Developer Relations | Full-Stack & Web3 Developer
         </p>
-        <a href="#projects" className="bg-cyber-accent text-white px-8 py-3 rounded-lg hover:bg-cyber-secondary transition glow">
-          Enter the Matrix
+        <button className='cyber-button text-lg px-4 py-2 text-8xl'>
+        <a href="#projects" className="hover:text-cyber-neon no-underline transition">
+          View My Work
         </a>
+        </button>
       </div>
       {/* Glowing Tennis Racket SVG */}
       <svg

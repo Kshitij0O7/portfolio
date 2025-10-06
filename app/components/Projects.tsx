@@ -5,8 +5,6 @@ import { animate } from 'animejs';
 
 interface ProjectItem {
   name: string;
-  tech: string;
-  date: string;
   points: string[];
   links: { label: string; url: string }[];
 }
@@ -18,8 +16,6 @@ export default function Projects() {
   const projects: ProjectItem[] = [
     {
       name: 'BSC Sniper Trading Bot',
-      tech: 'GraphQL, Node.js, ethers.js, Javascript',
-      date: 'June 2025 – June 2025',
       points: [
         'Created an automated bot to detect newly created BSC Memecoins.',
         'Utilized Bitquery Protobuf streams to capture the newly created token details with minimal latency.',
@@ -27,28 +23,24 @@ export default function Projects() {
         'Deployed in on Google Cloud VM instance to keep it running 24*7.',
       ],
       links: [
-        { label: 'Video Tutorial', url: 'https://example.com/video-tutorial' },
-        { label: 'GitHub Repo', url: 'https://github.com/Kshitij/repo' },
+        { label: 'Live Demo', url: 'https://www.youtube.com/watch?v=vgOHgqTJmj0' },
+        { label: 'GitHub', url: 'https://github.com/Kshitij0O7/evm-sniper' },
       ],
     },
     {
       name: 'Protobuf Kafka NPM package',
-      tech: 'Node.js, Protobuf, Kafka, Git',
-      date: 'April 2025 – April 2025',
       points: [
         'Published the bitquery-protobuf npm package for beginners.',
         'Simplified the process of setting up and running a Protobuf stream.',
         'Used this package to pitch Protobuf stream as a solution to consumers looking for minimal latency.',
       ],
       links: [
-        { label: 'Live URL: bitquery-protobuf', url: 'https://www.npmjs.com/package/bitquery-protobuf' },
-        { label: 'GitHub Repo', url: 'https://github.com/Kshitij/repo' },
+        { label: 'Live Demo', url: 'https://www.npmjs.com/package/bitquery-protobuf' },
+        { label: 'GitHub', url: 'https://github.com/bitquery/bitquery-protobuf' },
       ],
     },
     {
       name: 'DevRewards',
-      tech: 'Solidity, Git, Hardhat, Express, React, Chainlink, Docker',
-      date: 'May 2023 – June 2023',
       points: [
         'Developed a full-stack web3 application using smart contract for rewarding open source contributions.',
         'Implemented a data flow using GitHub web-hooks to access the commit data for the user.',
@@ -56,8 +48,8 @@ export default function Projects() {
         'Established Chainlink Node and used Chainlink Oracles to enable the communication between smart contract and external API’s.',
       ],
       links: [
-        { label: 'Live URL: DevRewards', url: 'https://example.com/devrewards' },
-        { label: 'GitHub Repo', url: 'https://github.com/Kshitij/repo' },
+        { label: 'Live Demo', url: 'https://devrewards.vercel.app/' },
+        { label: 'GitHub Repo', url: 'https://github.com/Kshitij0O7/DevRewards' },
       ],
     },
   ];
@@ -82,10 +74,10 @@ export default function Projects() {
   };
 
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
+    <section className="py-20 rounded-2xl">
+      <div className="container mx-auto px-4 h-11/12">
         <h2 className="text-4xl font-bold mb-8 text-center neon-text">Projects</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 w-11/12 mx-auto ">
           {projects.map((proj, index) => (
             <div
               key={index}
@@ -95,8 +87,7 @@ export default function Projects() {
               className="bg-cyber-bg p-6 rounded-lg shadow-lg relative"
             >
               <div ref={(el) => { ballRefs.current[index] = el; }} className="absolute top-0 right-0 w-6 h-6 bg-yellow-400 rounded-full opacity-0"></div>
-              <h3 className="text-2xl font-semibold mb-2 neon-text">{proj.name} | {proj.tech}</h3>
-              <p className="text-gray-400 mb-4">{proj.date}</p>
+              <h3 className="text-2xl font-semibold mb-2 neon-text">{proj.name}</h3>
               <ul className="list-disc pl-5 space-y-2 mb-4">
                 {proj.points.map((point, pIndex) => (
                   <li key={pIndex} className="text-gray-300">{point}</li>
@@ -104,9 +95,10 @@ export default function Projects() {
               </ul>
               <div className="flex space-x-2">
                 {proj.links.map((link, lIndex) => (
-                  <a key={lIndex} href={link.url} className="text-cyber-neon hover:text-cyber-secondary">
+                  <button className='cyber-button' key={lIndex}><a href={link.url} className="text-cyber-neon hover:text-cyber-secondary no-underline">
                     {link.label}
                   </a>
+                  </button>
                 ))}
               </div>
             </div>

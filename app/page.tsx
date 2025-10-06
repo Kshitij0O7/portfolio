@@ -49,7 +49,7 @@ export default function Home() {
       <section id="about" ref={(el) => { sectionsRef.current[0] = el; }} className="py-20">
         <About />
       </section>
-      <section id="experience" ref={(el) => { sectionsRef.current[1] = el; }} className="py-20 bg-cyber-bg/50">
+      <section id="experience" ref={(el) => { sectionsRef.current[1] = el; }} className="py-20">
         <Experience />
       </section>
       <section id="projects" ref={(el) => { sectionsRef.current[2] = el; }} className="py-20">

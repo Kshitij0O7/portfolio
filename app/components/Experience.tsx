@@ -64,17 +64,17 @@ export default function Experience() {
   };
 
   return (
-    <section className="py-20 bg-cyber-bg/50">
-      <div className="container mx-auto px-4">
+    <section className="py-20">
+      <div className="container mx-auto p-8 h-11/12">
         <h2 className="text-4xl font-bold mb-8 text-center neon-text">Experience</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 w-11/12 mx-auto">
           {experiences.map((exp, index) => (
             <div
               key={index}
               ref={(el) => { cardRefs.current[index] = el; }}
               onMouseEnter={() => handleHover(index, true)}
               onMouseLeave={() => handleHover(index, false)}
-              className="bg-cyber-bg p-6 rounded-lg shadow-lg relative"
+              className="bg-cyber-bg p-6 rounded-lg shadow-lg relative w-11/12"
             >
               <div ref={(el) => { ballRefs.current[index] = el; }} className="absolute top-0 right-0 w-6 h-6 bg-yellow-400 rounded-full opacity-0"></div>
               <h3 className="text-2xl font-semibold mb-2 neon-text">{exp.title}, {exp.company}</h3>
