@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cyber-bg: #0a0f1d;
+  --cyber-neon: #00ffcc;
+  --cyber-accent: #ff00ff;
+  --cyber-secondary: #00ccff;
+}
+
+body {
+  background: var(--cyber-bg);
+  color: #e0e0e0;
+  font-family: 'Orbitron', sans-serif; /* Cyberpunk-style font, install via Google Fonts */
+}
+
+.neon-text {
+  text-shadow: 0 0 5px var(--cyber-neon), 0 0 10px var(--cyber-neon), 0 0 20px var(--cyber-accent);
+}
+
+.glow {
+  box-shadow: 0 0 10px var(--cyber-neon), 0 0 20px var(--cyber-secondary), 0 0 30px var(--cyber-accent);
+}
