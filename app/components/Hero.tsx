@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import { animate, createTimeline } from 'animejs';
+import Link from 'next/link';
 
 export default function Hero() {
   const textWrapperRef = useRef<HTMLDivElement>(null);
@@ -55,9 +56,9 @@ export default function Hero() {
           Developer Relations | Full-Stack & Web3 Developer
         </p>
         <button className='cyber-button text-lg px-4 py-2 text-8xl'>
-        <a href="#projects" className="hover:text-cyber-neon no-underline transition">
+        <Link href="#projects" className="hover:text-cyber-neon no-underline transition">
           View My Work
-        </a>
+        </Link>
         </button>
       </div>
       {/* Glowing Tennis Racket SVG */}

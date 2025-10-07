@@ -19,7 +19,7 @@ export default function Experience() {
     {
       title: 'Developer Relations',
       company: 'Bitquery',
-      date: 'June 2024 – Present',
+      date: 'June 2024 - Present',
       location: 'Remote',
       points: [
         'Created custom SDKs for clients wanting to use Bitquery solutions to make the overall development process easier.',
@@ -31,7 +31,7 @@ export default function Experience() {
     {
       title: 'SDE Intern',
       company: 'TSAW Drones',
-      date: 'June 2023 – Nov 2023',
+      date: 'June 2023 - Nov 2023',
       location: 'IIT-Delhi, New Delhi',
       points: [
         'Using MERN stack, created many internal portals that enhanced operational efficiency by 50%.',

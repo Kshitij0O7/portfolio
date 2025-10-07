@@ -2,6 +2,7 @@
 
 import { useRef } from 'react';
 import { animate } from 'animejs';
+import Link from 'next/link';
 
 interface ProjectItem {
   name: string;
@@ -95,9 +96,9 @@ export default function Projects() {
               </ul>
               <div className="flex space-x-2">
                 {proj.links.map((link, lIndex) => (
-                  <button className='cyber-button' key={lIndex}><a href={link.url} className="text-cyber-neon hover:text-cyber-secondary no-underline">
+                  <button className='cyber-button' key={lIndex}><Link href={link.url} className="text-cyber-neon hover:text-cyber-secondary no-underline">
                     {link.label}
-                  </a>
+                  </Link>
                   </button>
                 ))}
               </div>
