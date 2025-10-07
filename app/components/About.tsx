@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <section className="py-20 bg-cyber-bg/50 px-6">
-      <div className="flex-col mx-auto p-8 border border-gray-700 rounded-2xl bg-cyber-bg/70">
-        <h2 className="text-4xl font-bold mb-8 text-center neon-text">About Me</h2>
+    <section className="bg-cyber-bg/50">
+      <div className="flex-col mx-auto">
+        <h2 className="text-4xl font-bold text-center neon-text">About Me</h2>
         <p className="text-lg text-gray-300 leading-relaxed w-11/12 text-left max-w-3xl mx-auto pl-4">
           Born in Amritsar, I graduated from the Indian Institute of Technology, Goa, with a Bachelor's in Electrical Engineering. 
           This technical foundation launched my journey into software, first as a Software Development Engineer and now as a Developer 

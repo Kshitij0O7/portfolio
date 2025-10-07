@@ -65,7 +65,7 @@ export default function Experience() {
 
   return (
     <section className="py-20">
-      <div className="container mx-auto p-8 h-11/12">
+      <div className="container mx-auto p-8 h-11/12 p-[2px]">
         <h2 className="text-4xl font-bold mb-8 text-center neon-text">Experience</h2>
         <div className="grid md:grid-cols-2 gap-8 w-11/12 mx-auto">
           {experiences.map((exp, index) => (

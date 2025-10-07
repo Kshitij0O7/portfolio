@@ -13,6 +13,8 @@ body {
   background: var(--cyber-bg);
   color: #e0e0e0;
   font-family: 'Orbitron', sans-serif;
+  padding: 0.5rem 0.5rem;
+  border-radius: var(--radius-2xl)
 }
 
 .neon-text {
@@ -22,6 +24,9 @@ body {
 /* Define glow as a standalone CSS class */
 .glow {
   box-shadow: 0 0 10px var(--cyber-neon), 0 0 20px var(--cyber-secondary), 0 0 30px var(--cyber-accent);
+  background: var(--cyber-bg); /* Ensures the background matches the outer glow */
+  border-radius: inherit; /* Inherits the border-radius from the parent element */
+  overflow: hidden; /* Clips inner content to match the rounded edges */
 }
 
 .cyber-button {

@@ -46,19 +46,19 @@ export default function Home() {
     <main className="bg-cyber-bg text-gray-200">
       <Navbar />
       <Hero />
-      <section id="about" ref={(el) => { sectionsRef.current[0] = el; }} className="py-20">
+      <section id="about" ref={(el) => { sectionsRef.current[0] = el; }} className="my-[20px] py-[5px]">
         <About />
       </section>
-      <section id="experience" ref={(el) => { sectionsRef.current[1] = el; }} className="py-20">
+      <section id="experience" ref={(el) => { sectionsRef.current[1] = el; }} className="my-[20px] py-[5px]">
         <Experience />
       </section>
-      <section id="projects" ref={(el) => { sectionsRef.current[2] = el; }} className="py-20">
+      <section id="projects" ref={(el) => { sectionsRef.current[2] = el; }} className="my-[20px] py-[5px]">
         <Projects />
       </section>
-      <section id="skills" ref={(el) => { sectionsRef.current[3] = el; }} className="py-20 bg-cyber-bg/50">
+      <section id="skills" ref={(el) => { sectionsRef.current[3] = el; }} className="my-[20px] py-[5px]">
         <Skills />
       </section>
-      <section id="contact" ref={(el) => { sectionsRef.current[4] = el; }} className="py-20">
+      <section id="contact" ref={(el) => { sectionsRef.current[4] = el; }} className="my-[20px] py-[5px]">
         <Contact />
       </section>
     </main>
