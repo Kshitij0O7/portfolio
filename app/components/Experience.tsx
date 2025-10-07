@@ -42,7 +42,7 @@ export default function Experience() {
     },
   ];
 
-  const handleHover = (index: number, isEnter: boolean) => {
+  const handleHoverOrTouch = (index: number, isEnter: boolean) => {
     const card = cardRefs.current[index];
     const ball = ballRefs.current[index];
     if (card && ball) {
@@ -72,8 +72,10 @@ export default function Experience() {
             <div
               key={index}
               ref={(el) => { cardRefs.current[index] = el; }}
-              onMouseEnter={() => handleHover(index, true)}
-              onMouseLeave={() => handleHover(index, false)}
+              onMouseEnter={() => handleHoverOrTouch(index, true)} // Desktop hover
+              onMouseLeave={() => handleHoverOrTouch(index, false)} // Desktop leave
+              onTouchStart={() => handleHoverOrTouch(index, true)} // Mobile touch start
+              onTouchEnd={() => handleHoverOrTouch(index, false)} // Mobile touch end
               className="bg-cyber-bg p-6 rounded-lg shadow-lg relative w-11/12"
             >
               <div ref={(el) => { ballRefs.current[index] = el; }} className="absolute top-0 right-0 w-6 h-6 bg-yellow-400 rounded-full opacity-0"></div>

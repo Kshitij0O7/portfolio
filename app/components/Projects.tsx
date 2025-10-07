@@ -96,7 +96,7 @@ export default function Projects() {
               </ul>
               <div className="flex space-x-2">
                 {proj.links.map((link, lIndex) => (
-                  <button className='cyber-button' key={lIndex}><Link href={link.url} className="text-cyber-neon hover:text-cyber-secondary no-underline">
+                  <button className='cyber-button' key={lIndex}><Link href={link.url} target = "_blank"className="text-cyber-neon hover:text-cyber-secondary no-underline">
                     {link.label}
                   </Link>
                   </button>

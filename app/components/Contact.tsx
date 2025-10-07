@@ -9,20 +9,20 @@ export default function Contact() {
       <div className="flex-col mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold mb-8 neon-text">Contact ME</h2>
         <button className="cyber-button"> 
-          <Link href="mailto:ksmahajan001@gmail.com"><IoMdMail size={30}/></Link>
+          <Link target = "_blank" href="mailto:ksmahajan001@gmail.com"><IoMdMail size={30}/></Link>
         </button>
         <button className="cyber-button">
-          <Link href="https://www.linkedin.com/in/kshitij-mahajan-61a593205/">
+          <Link target = "_blank" href="https://www.linkedin.com/in/kshitij-mahajan-61a593205/">
           <FaLinkedin size={30}/>
           </Link>
         </button>
         <button className="cyber-button">
-          <Link href="https://github.com/Kshitij0O7">
+          <Link target = "_blank" href="https://github.com/Kshitij0O7">
           <FaGithub size={30}/>
           </Link>
         </button>
         <button className="cyber-button">
-          <Link href="https://x.com/Kshitij007527">
+          <Link target = "_blank" href="https://x.com/Kshitij007527">
           <FaXTwitter size={30}/>
           </Link>
         </button>
