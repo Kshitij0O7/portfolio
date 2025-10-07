@@ -2,12 +2,8 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    './app/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-    './src/**/*.{js,ts,jsx,tsx}',
-    // if you keep helpers or other dirs, include them:
-    './**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}', // Ensure all app files are scanned
+    './components/**/*.{js,ts,jsx,tsx}', // Include components directory
   ],
   theme: {
     extend: {
